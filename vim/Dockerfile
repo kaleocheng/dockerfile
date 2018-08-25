@@ -1,4 +1,4 @@
-FROM debian
+FROM debian:sid
 RUN apt update && apt install -y vim git curl python3 python3-pip
 RUN pip3 install yapf pylint
 RUN curl -fLo /root/.vim/autoload/plug.vim --create-dirs \
