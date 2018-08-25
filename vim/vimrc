@@ -1,8 +1,12 @@
+set encoding=utf-8
+
 call plug#begin('~/.vim/plugged')
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 Plug 'google/vim-glaive'
 Plug 'vim-syntastic/syntastic'
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
 Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
