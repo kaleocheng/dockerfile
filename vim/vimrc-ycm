@@ -1,0 +1,3 @@
+call plug#begin('~/.vim/plugged')
+  Plug 'Valloric/YouCompleteMe', {'do': './install.py'}
+call plug#end()
