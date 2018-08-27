@@ -6,6 +6,8 @@ RUN apt install -y python3 python3-pip
 RUN cp /usr/bin/python3 /usr/bin/python
 RUN pip3 install yapf pylint
 
+RUN apt install -y golang
+
 RUN curl -fLo /root/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
@@ -17,5 +19,4 @@ RUN vim +PlugInstall +qall
 
 COPY vimrc /tmp/vimrc
 RUN cat /tmp/vimrc >> /root/.vimrc
-
 
