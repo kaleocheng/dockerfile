@@ -1,3 +1,3 @@
 FROM kaleocheng/hugo
-RUN apk add --no-cache nodejs npm py-pygments
+RUN apk add --no-cache nodejs npm py-pygments sassc
 
